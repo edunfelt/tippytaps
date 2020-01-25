@@ -6,11 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
     <script src="script.js" defer></script>
   </head>  
   <body>
+    <div>
+      <header class="header">
+        <p id="description">
+          Hire one of our professional dog sitters. We provide the best
+          company for your dog while you take care of important human-stuff :)
+        </p>
+      </header>
+    </div>
 
+    <div class="form-container">
+      <form id="survey-form" action="">
+
+        <h1 id="title">Book a sitter</h1>
+        
+        <div class="tab">Who are you?
+          <p><input 
+            class="dog-form"
+            placeholder="Name" 
+            oninput="this.className = ''"
+            type="text"
+            id="name">
+          </p>
+          <p><input 
+            class="dog-form"
+            placeholder="E-mail" 
+            oninput="this.className = ''"
+            type="email"
+            id="email">
+          </p>
+          <p><input 
+            class="dog-form"
+            placeholder="Phone" 
+            oninput="this.className = ''"
+            type="">
+          </p>
+          <p><input 
+            class="dog-form"
+            placeholder="Address" 
+            oninput="this.className = ''"
+            type="">
+          </p>
+        </div>
+        
+        <div class="tab">Tell us about your dog!
+          <p><input placeholder="Name..." oninput="this.className = ''"></p>
+          <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">When do you need our help?
+          <p><input placeholder="dd" oninput="this.className = ''"></p>
+          <p><input placeholder="mm" oninput="this.className = ''"></p>
+          <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">Find your dog's next best friend!
+          <p><input placeholder="Username..." oninput="this.className = ''"></p>
+          <p><input placeholder="Password..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)"><</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">></button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form>
+    </div>
   </body>
 </html>

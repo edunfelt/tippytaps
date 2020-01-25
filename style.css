@@ -1,1 +1,87 @@
+html{
+    background: #00B260; /* fallback */
+    background-image: linear-gradient(to left bottom, #00b260, #48b272, #69b283, #84b293, #9db0a3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
 
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Style the form */
+.form-container {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 50vw;
+    height: 50vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 700px;
+    max-height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 7px; /* 5px rounded corners */
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid #aaaaaa;
+  }
+
+  .dog-form:focus {
+    border-color: #00B260;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 179, 95, 0.5); 
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    border-color: #E08119;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(224, 128, 25, 0.5); 
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+      font-size: 18px;
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    background-color: #9DB0A3;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #00B260;
+  }
