@@ -45,7 +45,7 @@ h1 {
     border: 1px solid #aaaaaa;
   }
 
-  .dog-form:focus {
+  input:focus {
     border-color: #00B260;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 179, 95, 0.5); 
