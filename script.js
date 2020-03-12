@@ -12,9 +12,9 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = '<i class="fas fa-check"></i>';
   } else {
-    document.getElementById("nextBtn").innerHTML = ">";
+    document.getElementById("nextBtn").innerHTML = '<i class="fas fa-angle-right"></i>';
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
